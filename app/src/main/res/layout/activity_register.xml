@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19202A"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_label"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+    <!-- Full Name Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name : "
+        android:id="@+id/tv_label_fullname"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_label"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dff2f7"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Enter your full name"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_fullname"
+        android:id="@+id/et_fullname"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Username Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username : "
+        android:id="@+id/tv_label_username"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/et_fullname"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dff2f7"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Enter your username"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_username"
+        android:id="@+id/et_username"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Existing Email Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:id="@+id/tv_label_email"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/et_username"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dff2f7"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Enter your email"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_email"
+        android:id="@+id/et_email"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Existing Password Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        android:id="@+id/tv_label_password"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/et_email"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dff2f7"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Create your password"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_password"
+        android:id="@+id/et_password"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"/>
+
+    <!-- Existing Repeat Password Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password : "
+        android:id="@+id/tv_label_password2"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dff2f7"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Repeat your password"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_password2"
+        android:id="@+id/et_password2"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="25dp"
+        android:background="#3B82F6"
+        app:layout_constraintTop_toBottomOf="@id/et_password2"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+    <!-- Login Link -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:id="@+id/tv_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_register"
+        app:layout_constraintStart_toStartOf="@id/main"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

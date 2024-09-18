@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Slider Banner Promo -->
+    <ImageView
+        android:id="@+id/bannerImageView"
+        android:layout_width="393dp"
+        android:layout_height="146dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Promo Banner"
+        android:scaleType="fitCenter"
+        android:src="@drawable/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Indicator Layout -->
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/bannerImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <!-- Indicator 1 -->
+        <View
+            android:id="@+id/indicator1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/indicator_selected"
+            android:layout_margin="4dp"/>
+
+        <!-- Indicator 2 -->
+        <View
+            android:id="@+id/indicator2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/indicator_unselected"
+            android:layout_margin="4dp"/>
+
+        <!-- Indicator 3 -->
+        <View
+            android:id="@+id/indicator3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/indicator_unselected"
+            android:layout_margin="4dp"/>
+
+        <!-- Indicator 4 -->
+        <View
+            android:id="@+id/indicator4"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/indicator_unselected"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <!-- Daftar Game Terlaris -->
+    <TextView
+        android:id="@+id/tvGameTerlaris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_terlaris"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/indicatorLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- List Game -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvGameTerlaris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:paddingBottom="16dp"
+        tools:listitem="@layout/item_game" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="68dp"
+        android:clickable="true"
+        android:contentDescription="Tambah"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

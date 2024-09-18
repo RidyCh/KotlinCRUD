@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OneXpress</string>
+    <string name="title_home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_add_game">Tambahkan Game Baru</string>
+    <string name="title_favorit">Favorit</string>
+    <string name="title_profile">Profile</string>
+    <string name="game_terlaris">Semua Game</string>
+    <string name="title_search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Cari game...</string>
+</resources>
